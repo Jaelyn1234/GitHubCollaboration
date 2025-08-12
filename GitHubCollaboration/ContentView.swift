@@ -9,20 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Text("Change 1")
-            Text("Change 2")
-            Text("Change 3")
-            Text("New Change - Kelly")
-            Text("New Change - Jaelyn")
-        }
-        .padding()
-    }
-}
+        NavigationStack{
+            
+        VStack { //start of VStack
+        HStack{
+            Text("Unknot")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            Spacer()
+        } //end of HStack
+                Spacer()
+                
+            
+            NavigationLink(destination: Arms()) {
+                Text("Arms")
+            } //end of arms navigation
+            NavigationLink(destination: Legs()) {
+                Text("Legs")
+            } //end of legs navigation
+            NavigationLink(destination: Core()) {
+                Text("Core")
+            } //end of core navigation
+            
+            //disclaimer
+            Text("This site does not constitute an attempt to practice medicine. The use of the site does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
+                .multilineTextAlignment(.center)
+            
+
+        } //END of VStack
+        } // end of navigation stack
+            .padding()
+        
+    } //end of var body
+} //end of atruct ContentView
 
 #Preview {
     ContentView()
