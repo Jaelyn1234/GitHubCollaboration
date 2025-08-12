@@ -91,6 +91,18 @@ struct ContentView: View {
                     Spacer()
 =======
                     
+            Text("Neck and back")
+            
+            Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
+                .multilineTextAlignment(.center)
+            
+
+        } //END of VStack
+
+        } // end of navigation stack
+
                     Text("Neck and back")
                     
                     //disclaimer
@@ -118,6 +130,7 @@ struct ContentView: View {
                 } //END of VStack
                 
             } // end of navigation stack
+
             .padding()
             
         } //end of var body
