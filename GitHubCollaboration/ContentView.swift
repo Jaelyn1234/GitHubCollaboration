@@ -11,27 +11,55 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             
-        VStack { //start of VStack
-        HStack{
-            Text("Unknot")
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            Spacer()
-        } //end of HStack
-                Spacer()
+    ZStack {
                 
-            
+        Color(red: 0.8705882352941177, green: 0.8235294117647058, blue: 0.6666666666666666)
+            .ignoresSafeArea()
+        
+        VStack { //start of VStack
+                    
+            HStack{
+                Text("Unknot")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(Color(red: 0.4666666666666667, green: 0.43137254901960786, blue: 0.2784313725490196))
+            Spacer()
+                    } //end of HStack
+            Spacer()
+                    
+                    
             NavigationLink(destination: Arms()) {
                 Text("Arms")
-            } //end of arms navigation
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
+                        
+                    } //end of arms navigation
+            Text("Elbows, shoulders, and wrists")
+            
+            Spacer()
+                    
             NavigationLink(destination: Legs()) {
                 Text("Legs")
-            } //end of legs navigation
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
+                    } //end of legs navigation
+                    
+            Text("Hamstrings, shins, calves, and quadriceps")
+            
+            Spacer()
+                    
             NavigationLink(destination: Core()) {
                 Text("Core")
-            } //end of core navigation
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
+                    } //end of core navigation
+                    
+            Text("Neck and back")
             
-            //disclaimer
+          //disclaimer
             Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
                 .font(.footnote)
                 .foregroundColor(Color.gray)
@@ -39,6 +67,7 @@ struct ContentView: View {
             
 
         } //END of VStack
+
         } // end of navigation stack
             .padding()
         
