@@ -59,21 +59,20 @@ struct ContentView: View {
                     
             Text("Neck and back")
             
-            Spacer()
-                    
-                    //disclaimer
-                Text("This site does not constitute an attempt to practice medicine. The use of the site does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
-                    .font(.footnote)
-                    .foregroundColor(Color.gray)
-                    .multilineTextAlignment(.center)
-                    
-                } //END of VStack
-            }
+          //disclaimer
+            Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
+                .font(.footnote)
+                .foregroundColor(Color.gray)
+                .multilineTextAlignment(.center)
+            
+
+        } //END of VStack
+
         } // end of navigation stack
             .padding()
         
     } //end of var body
-} //end of atruct ContentView
+} //end of struct ContentView
 
 #Preview {
     ContentView()
