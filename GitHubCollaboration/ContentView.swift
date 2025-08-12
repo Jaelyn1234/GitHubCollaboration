@@ -32,7 +32,7 @@ struct ContentView: View {
             } //end of core navigation
             
             //disclaimer
-            Text("This site does not constitute an attempt to practice medicine. The use of the site does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
+            Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
                 .font(.footnote)
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
@@ -43,7 +43,7 @@ struct ContentView: View {
             .padding()
         
     } //end of var body
-} //end of atruct ContentView
+} //end of struct ContentView
 
 #Preview {
     ContentView()
