@@ -43,7 +43,7 @@ struct Core: View {
                         
                     }//end of HStack
                     .padding()
-                    .background(Rectangle().foregroundColor(.orange))
+                    .background(Rectangle().foregroundColor(Color(red: 0.282, green: 0.5254901960784314, blue: 0.5686274509803921)))
                     .cornerRadius(15)
                     .shadow(radius: 15)
                     .padding()
@@ -66,12 +66,12 @@ struct Core: View {
                         Image("Cat_Stretch")
                             .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 160, height: 160)
+                            .frame(width: 170, height: 170)
                             .cornerRadius(15)
                         
                     }//end of HStack
                     .padding()
-                    .background(Rectangle().foregroundColor(.yellow))
+                    .background(Rectangle().foregroundColor(Color(red: 0.9254901960784314, green: 0.7529411764705882, blue: 0.5254901960784314)))
                     .cornerRadius(15)
                     .shadow(radius: 15)
                     .padding()
@@ -80,7 +80,7 @@ struct Core: View {
                 ZStack{
                     HStack{
                         VStack{
-                            Text("Dead bugs (for core strength):")
+                            Text("Dead bug (for core strength):")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.leading)
@@ -99,7 +99,35 @@ struct Core: View {
                         
                     }//end of HStack
                     .padding()
-                    .background(Rectangle().foregroundColor(.green))
+                    .background(Rectangle().foregroundColor(Color(red: 0.6509803921568628, green: 0.6549019607843137, blue: 0.41568627450980394)))
+                    .cornerRadius(15)
+                    .shadow(radius: 15)
+                    .padding()
+                }//end of ZStack
+                
+                ZStack{
+                    HStack{
+                        VStack{
+                            Text("Bird dog (for spine and core):")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, -10.0)
+                            Text("Start on all fours with your hands under your shoulders and knees under your hips. Extend your right arm forward and your left leg back, keeping your core engaged and your spine flat. Hold for a few seconds, then return to the starting position and switch sides.")
+                                .font(.footnote)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(nil)
+                                .padding(.leading, 5.0)
+                        }//end of VStack in HStack
+                        Image("bird_dog")
+                            .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 160, height: 160)
+                            .cornerRadius(15)
+                        
+                    }//end of HStack
+                    .padding()
+                    .background(Rectangle().foregroundColor(Color(red: 0.6509803921568628, green: 0.6549019607843137, blue: 0.41568627450980394)))
                     .cornerRadius(15)
                     .shadow(radius: 15)
                     .padding()
