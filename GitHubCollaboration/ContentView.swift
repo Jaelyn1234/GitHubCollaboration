@@ -51,7 +51,6 @@ struct ContentView: View {
                     } //end of legs navigation
                     Text("Hamstrings, shins, calves, and quadriceps")
                     Spacer()
-
                     NavigationLink(destination: Core()) {
                         Text("Core")
                             .font(.title)
@@ -81,5 +80,3 @@ struct ContentView: View {
     #Preview {
         ContentView()
     }
-            
-
