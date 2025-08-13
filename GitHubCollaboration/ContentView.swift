@@ -33,24 +33,6 @@ struct ContentView: View {
                             .frame(width: 100.0, height: 100.0)
                     } //end of HStack
                     Spacer()
-=======
-            
-            ZStack {
-                
-                Color(red: 0.8705882352941177, green: 0.8235294117647058, blue: 0.6666666666666666)
-                    .ignoresSafeArea()
-                
-                VStack { //start of VStack
-                    
-                    HStack{
-                        Text("Unknot")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(red: 0.4666666666666667, green: 0.43137254901960786, blue: 0.2784313725490196))
-                        Spacer()
-                    } //end of HStack
-                    Spacer()
-                    
                     
                     NavigationLink(destination: Arms()) {
                         Text("Arms")
@@ -60,13 +42,7 @@ struct ContentView: View {
                     } //end of arms navigation
                     Text("Elbows, shoulders, and wrists")
                     Spacer()
-=======
-                        
-                    } //end of arms navigation
-                    Text("Elbows, shoulders, and wrists")
-                    
-                    Spacer()
-                    
+                                    
                     NavigationLink(destination: Legs()) {
                         Text("Legs")
                             .font(.title)
@@ -75,12 +51,7 @@ struct ContentView: View {
                     } //end of legs navigation
                     Text("Hamstrings, shins, calves, and quadriceps")
                     Spacer()
-=======
-                    
-                    Text("Hamstrings, shins, calves, and quadriceps")
-                    
-                    Spacer()
-                    
+
                     NavigationLink(destination: Core()) {
                         Text("Core")
                             .font(.title)
@@ -89,51 +60,26 @@ struct ContentView: View {
                     } //end of core navigation
                     Text("Neck and back")
                     Spacer()
-=======
-                    
-            Text("Neck and back")
             
-            Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
-                .font(.footnote)
-                .foregroundColor(Color.gray)
-                .multilineTextAlignment(.center)
-            
-
-        } //END of VStack
-
-        } // end of navigation stack
-
-                    Text("Neck and back")
-                    
                     //disclaimer
                     Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
                         .font(.footnote)
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
-                } //end of vstack
-              
-            } // end of zstack
             
-        } // end of navigation
-        
-    } //var body
-    
-} //content view
+        } //END of VStack
+
+        } // end of zstack
+                   
+                } //end of navigation
+              
+            } // end of var body
+            
+        } // end of struct
     
     #Preview {
         ContentView()
     }
-=======
-                    
-                    
-                } //END of VStack
-                
-            } // end of navigation stack
-
-            .padding()
             
-        } //end of var body
-    } //end of struct ContentView
-}
 
