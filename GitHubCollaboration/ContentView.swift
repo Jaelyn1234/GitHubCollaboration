@@ -33,7 +33,6 @@ struct ContentView: View {
                             .frame(width: 100.0, height: 100.0)
                     } //end of HStack
                     Spacer()
-=======
             
             ZStack {
                 
@@ -60,7 +59,6 @@ struct ContentView: View {
                     } //end of arms navigation
                     Text("Elbows, shoulders, and wrists")
                     Spacer()
-=======
                         
                     } //end of arms navigation
                     Text("Elbows, shoulders, and wrists")
@@ -75,7 +73,6 @@ struct ContentView: View {
                     } //end of legs navigation
                     Text("Hamstrings, shins, calves, and quadriceps")
                     Spacer()
-=======
                     
                     Text("Hamstrings, shins, calves, and quadriceps")
                     
@@ -89,7 +86,6 @@ struct ContentView: View {
                     } //end of core navigation
                     Text("Neck and back")
                     Spacer()
-=======
                     
             Text("Neck and back")
             
@@ -119,21 +115,6 @@ struct ContentView: View {
         
     } //var body
     
-} //content view
-    
     #Preview {
         ContentView()
     }
-=======
-                    
-                    
-                } //END of VStack
-                
-            } // end of navigation stack
-
-            .padding()
-            
-        } //end of var body
-    } //end of struct ContentView
-}
-
