@@ -20,11 +20,11 @@ struct Legs: View {
             Spacer()
             ZStack{
                 Text("hamstrings")
-                    .font(.title2)
+                    .font(.title)
                     .foregroundColor(Color.white)
             } //end of ZStack
             .padding()
-            .background(Rectangle() .foregroundColor(Color(hue: 0.572, saturation: 0.272, brightness: 0.912)))
+            .background(Rectangle() .foregroundColor(Color(hue: 0.572, saturation: 0.267, brightness: 0.891)))
             .cornerRadius(15)
             .padding()
           
@@ -98,11 +98,11 @@ struct Legs: View {
             
             ZStack{
                 Text("shins")
-                    .font(.title2)
+                    .font(.title)
                     .foregroundColor(Color.white)
             } //end of ZStack
             .padding()
-            .background(Rectangle() .foregroundColor(Color(hue: 0.815, saturation: 0.218, brightness: 0.914)))
+            .background(Rectangle() .foregroundColor(Color(hue: 0.812, saturation: 0.218, brightness: 0.914)))
             .cornerRadius(15)
             .padding()
             
@@ -134,11 +134,11 @@ struct Legs: View {
             
             ZStack{
                 Text("calves")
-                    .font(.title2)
+                    .font(.title)
                     .foregroundColor(Color.white)
             } //end of ZStack
             .padding()
-            .background(Rectangle() .foregroundColor(Color(hue: 0.407, saturation: 0.286, brightness: 0.87)))
+            .background(Rectangle() .foregroundColor(Color(hue: 0.407, saturation: 0.287, brightness: 0.862)))
             .cornerRadius(15)
             .padding()
             
@@ -156,18 +156,91 @@ struct Legs: View {
                 .aspectRatio(contentMode: .fit)
                 .padding([.top, .leading, .trailing])
             
+            //jumping calf presses
+            Text("Jumping Calf Presses")
+                .font(.title2)
+                .foregroundColor(Color.gray)
+            Text("Stand up straight on the balls of your feet. Forcefully press off the ground and land softly on the balls of your feet.")
+                .font(.body)
+                .fontWeight(.light)
+                .foregroundColor(Color.gray)
+                .padding(.horizontal, 10.0)
+            Image("calves1")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding([.top, .leading, .trailing])
+            
+            //plie squat calf raises
+            Text("Plie Squat Calf Raises")
+                .font(.title2)
+                .foregroundColor(Color.gray)
+            Text("Start in a squat with your toes pointed outwards. Lift your heels off the ground, onto the balls of your feet. Lower your heels back down slowly.")
+                .font(.body)
+                .fontWeight(.light)
+                .foregroundColor(Color.gray)
+                .padding(.horizontal, 10.0)
+            Image("calves2")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding([.top, .leading, .trailing])
+            
             ZStack{
                 Text("quads")
-                    .font(.title2)
+                    .font(.title)
                     .foregroundColor(Color.white)
             } //end of ZStack
             .padding()
             .background(Rectangle() .foregroundColor(Color(hue: 0.149, saturation: 0.375, brightness: 0.909)))
             .cornerRadius(15)
             .padding()
+            
+            //standing quad stretch
+            Text("Standing Quad Stretch")
+                .font(.title2)
+                .foregroundColor(Color.gray)
+            Text("Stand with one leg bent so that your heel is towards your glute. Hold and pull gently on your ankle until you feel a stretch in your quadricep.")
+                .font(.body)
+                .fontWeight(.light)
+                .foregroundColor(Color.gray)
+                .padding(.horizontal, 10.0)
+            Image("quad")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding([.top, .leading, .trailing])
+            
+            //kneeling quad stretch
+            Text("Kneeling Quad Stretch")
+                .font(.title2)
+                .foregroundColor(Color.gray)
+            Text("Start in a kneeling position with one leg back. Hold your foot and pull gently towards your glutes to feel a stretch in your quad.")
+                .font(.body)
+                .fontWeight(.light)
+                .foregroundColor(Color.gray)
+                .padding(.horizontal, 10.0)
+            Image("quad1")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding([.top, .leading, .trailing])
+            
+            //side lying quad stretch
+            Text("Side Lying Quad Stretch")
+                .font(.title2)
+                .foregroundColor(Color.gray)
+            Text("Lie on your side, with the bottom leg extended and the top leg bent. Gently pull on your foot towards your glutes to feel a stretch in your quad.")
+                .font(.body)
+                .fontWeight(.light)
+                .foregroundColor(Color.gray)
+                .padding(.horizontal, 10.0)
+            Image("quad2")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding([.top, .leading, .trailing])
+            
+            
             Text("Images source: https://www.shutterstock.com/search/hamstring-stretch?dd_referrer=https%3A%2F%2Fwww.google.com%2F&image_type=vector")
                 .font(.footnote)
                 .fontWeight(.light)
+                .padding(.horizontal, 12.0)
         }//end of scrollview
     } //end of var body
 } //end of struct legs
