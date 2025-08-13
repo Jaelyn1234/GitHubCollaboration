@@ -27,7 +27,10 @@ struct ContentView: View {
                             .padding(.all)
                             .frame(width: 100.0, height: 100.0)
                     } //end of HStack
-                    Spacer()
+                  
+                    Text("Welcome to Unknot, a daily stretching app that offers physical and mental benefits, increases flexibility, and reduces the risk of injury.")
+                        .font(.headline)
+                        .foregroundColor(Color(red: 0.4666666666666667, green: 0.43137254901960786, blue: 0.2784313725490196))
                     
                     ZStack{
                 NavigationLink(destination: Arms()) {
@@ -36,7 +39,7 @@ struct ContentView: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
-                        Text("Elbows, shoulders, and wrists")
+                        Text("Triceps, shoulders, and wrists")
                             .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
                                 }
                             } //end of arms navigation
@@ -68,11 +71,11 @@ struct ContentView: View {
                     ZStack{
                         NavigationLink(destination: Core()) {
                             VStack{
-                            Text("Core")
+                            Text("Torso")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
-                            Text("Neck and back")
+                            Text("Trapezius, back, core")
                             .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
                             }
                         } //end of core navigation
@@ -86,7 +89,7 @@ struct ContentView: View {
                     //disclaimer
                     Text("This app focuses on injury prevention and does not constitute an attempt to practice medicine. Individuals should consult a qualified health care provider for medical or other professional advice.")
                         .font(.callout)
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(Color(red: 0.344, green: 0.349, blue: 0.345))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
             
