@@ -14,11 +14,6 @@ struct ContentView: View {
                 Color(red: 0.8705882352941177, green: 0.8235294117647058, blue: 0.6666666666666666)
                     .ignoresSafeArea(.all)
                 
-                    Rectangle()
-                        .foregroundColor(Color(red: 0.7607843137254902, green: 0.6078431372549019, blue: 0.4235294117647059))
-                        .frame(width: 350.0, height: 60.0)
-                        .cornerRadius(15)
-                        .padding(.all)
                 VStack { //start of VStack
                     HStack {
                     Text("  Unknot")
@@ -34,35 +29,63 @@ struct ContentView: View {
                     } //end of HStack
                     Spacer()
                     
-                    NavigationLink(destination: Arms()) {
+                    ZStack{
+                NavigationLink(destination: Arms()) {
+                    VStack{
                         Text("Arms")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
-                    } //end of arms navigation
-                    Text("Elbows, shoulders, and wrists")
-                    Spacer()
-                                    
-                    NavigationLink(destination: Legs()) {
+                        Text("Elbows, shoulders, and wrists")
+                            .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
+                                }
+                            } //end of arms navigation
+                        
+                    } //end of ZStack
+                   
+                    .padding()
+                    .background(Rectangle() .foregroundColor(Color(red: 0.7607843137254902, green: 0.6078431372549019, blue: 0.42352941176470592)))
+                    .cornerRadius(15)
+                    .padding()
+                    
+                    ZStack{
+                        NavigationLink(destination: Legs()) {
+                            VStack{
                         Text("Legs")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
-                    } //end of legs navigation
-                    Text("Hamstrings, shins, calves, and quadriceps")
-                    Spacer()
-                    NavigationLink(destination: Core()) {
-                        Text("Core")
+                        Text("Hamstrings, shins, calves, and quadriceps")
+                        .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
+                            }
+                        } //end of legs navigation
+                    }
+                    .padding()
+                    .background(Rectangle() .foregroundColor(Color(red: 0.7607843137254902, green: 0.6078431372549019, blue: 0.42352941176470592)))
+                    .cornerRadius(15)
+                    .padding()
+                    
+                    ZStack{
+                        NavigationLink(destination: Core()) {
+                            VStack{
+                            Text("Core")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color(red: 0.23, green: 0.296, blue: 0.384))
-                    } //end of core navigation
-                    Text("Neck and back")
-                    Spacer()
-            
+                            Text("Neck and back")
+                            .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
+                            }
+                        } //end of core navigation
+                    }
+                    .padding()
+                    .background(Rectangle() .foregroundColor(Color(red: 0.7607843137254902, green: 0.6078431372549019, blue: 0.42352941176470592)))
+                    .cornerRadius(15)
+                    .padding()
+                        Spacer()
+                    
                     //disclaimer
-                    Text("This app does not constitute an attempt to practice medicine. The use of the app does not establish a professional-patient relationship. Individuals should consult a qualified health care provider for medical or other professional advice and answer to personal health questions. Instead, this app focuses on injury prevention.")
-                        .font(.footnote)
+                    Text("This app focuses on injury prevention and does not constitute an attempt to practice medicine. Individuals should consult a qualified health care provider for medical or other professional advice.")
+                        .font(.callout)
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
