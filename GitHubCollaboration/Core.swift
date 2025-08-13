@@ -21,7 +21,7 @@ struct Core: View {
                     
                     VStack {
                         
-                        Text("Back & Core")
+                        Text("Torso")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -34,8 +34,9 @@ struct Core: View {
                                 Text("Hip bridge (for back and spine):")
                                     .font(.title3)
                                     .fontWeight(.bold)
-                                    
-                                Text("Lay down on your back with your knees bent and your feet flat on the ground. Let your hands rest on the side, palm-up. Squeeze your glutes and abs as you raise your hips toward the ceiling and then hold for 2 seconds. Slowly lower the hips toward the floor.")
+                                    .multilineTextAlignment(.leading)
+                                
+                                Text("Lay down on your back with your knees bent and your feet flat on the ground. Let your hands rest on the side, palm-up. Squeeze your core as you raise your hips toward the ceiling and then hold for 2 seconds. Slowly lower the hips toward the floor.")
                                     .font(.footnote)
                                     .multilineTextAlignment(.leading)
                                     .lineLimit(nil)
@@ -49,7 +50,7 @@ struct Core: View {
                             
                         }//end of HStack
                         .padding()
-                        .background(Rectangle().foregroundColor(Color(hue: 0.525, saturation: 0.453, brightness: 0.626)))
+                        .background(Rectangle().foregroundColor(Color(hue: 0.559, saturation: 0.38, brightness: 0.783)))
                         .cornerRadius(15)
                         .shadow(radius: 15)
                         .padding()
@@ -61,8 +62,9 @@ struct Core: View {
                                 Text("Cat stretch (for lower back and trapezius):")
                                     .font(.title3)
                                     .fontWeight(.bold)
+                                    .multilineTextAlignment(.leading)
                                     
-                                Text("Kneel on your hands and knees. Slowly arch your back, as if you're pulling your belly to the ceiling and bring your head down. Then slowly let your back and belly sage towards the floor and bring your head up.")
+                                Text("Kneel on your hands and knees. Slowly arch your back, as if you're pulling your belly to the ceiling and bring your head down. Then slowly let your back sag towards the floor and bring your head up.")
                                     .font(.footnote)
                                     .multilineTextAlignment(.leading)
                                     .lineLimit(nil)
@@ -88,7 +90,7 @@ struct Core: View {
                                 Text("Bird dog (for spine and core):")
                                     .font(.title3)
                                     .fontWeight(.bold)
-                                Text("Start on all fours with your hands under your shoulders and knees under your hips. Extend your right arm forward and your left leg back, keeping your core engaged and your spine flat. Hold for a few seconds, then return to the starting position and switch sides.")
+                                Text("Start on all fours with your hands under your shoulders and your knees under your hips. Extend your right arm forward and your left leg back, keeping your core engaged and your spine flat. Hold for a few seconds, then return to the starting position and switch sides.")
                                     .font(.footnote)
                                     .multilineTextAlignment(.leading)
                                     .lineLimit(nil)
@@ -111,9 +113,10 @@ struct Core: View {
                     ZStack{
                         HStack{
                             VStack{
-                                Text("Dead bug (for core):")
+                                Text("Dead bug (for core strength):")
                                     .font(.title3)
                                     .fontWeight(.bold)
+                                    .multilineTextAlignment(.leading)
                                 Text("On your back, lift your arms up perpendicular to your shoulders and bring your knees up to a 90-degree angle. Slowly extend and straighten your left leg to the floor while dropping your right arm behind your head. Alternate sides.")
                                     .font(.footnote)
                                     .multilineTextAlignment(.leading)
@@ -138,11 +141,11 @@ struct Core: View {
                     ZStack{
                         HStack{
                             VStack{
-                                Text("Planks (for core):")
+                                Text("Planks (for core strength):")
                                     .font(.title3)
                                     .fontWeight(.bold)
                                     .multilineTextAlignment(.leading)
-                                Text("Lie on your stomach with your forearms flat against the floor and your legs straight out behind you. Tuck your toes under and lift your body from the ground. Use your abdominal muscles to hold your body in a straight line and hold for 20 seconds.")
+                                Text("Lie on your stomach with your forearms flat against the floor and your legs straight out behind you. Tuck your toes under and lift your body from the ground. Use your back and core to hold your body in a straight line for 20 seconds.")
                                     .font(.footnote)
                                     .multilineTextAlignment(.leading)
                                     .lineLimit(nil)
@@ -156,7 +159,7 @@ struct Core: View {
                             
                         }//end of HStack
                         .padding()
-                        .background(Rectangle().foregroundColor(Color(hue: 0.093, saturation: 0.7, brightness: 0.827)))
+                        .background(Rectangle().foregroundColor(Color(red: 0.8666666666666667, green: 0.6392156862745098, blue: 0.3058823529411765)))
                         .cornerRadius(15)
                         .shadow(radius: 15)
                         .padding()
