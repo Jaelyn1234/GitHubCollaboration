@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct Arms: View {
+    @State private var timeRemaining = 100 // time in seconds
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+   
     var body: some View {
+        
         ZStack {
             Color(red: 0.673, green: 0.703, blue: 0.58)
                 .ignoresSafeArea(.all)
@@ -92,7 +96,7 @@ struct Arms: View {
                     .padding(.all)
                     .frame(width: 300.0, height: 300.0)
                 
-                Text("Interlock your fingers behind you and push your arms up to stretch while standing. Interlock your fingers behind your head and move your elbows backward to do an above-the-head chest stretch. Hold for about 30 seconds.")
+                Text("Interlock your fingers behind you and push your arms up to stretch while standing. Interlock your fingers behind your head and move your elbows backward to do an above-the-head chest stretch. Hold for 30 seconds.")
                     .font(.body)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
@@ -118,7 +122,7 @@ struct Arms: View {
                     .padding(.all)
                     .frame(width: 300.0, height: 300.0)
                 
-                Text("Extend the arm with the affected wrist in front of you and point your fingers up. With your other hand, gently bend your wrist farther until you feel a mild to moderate stretch in your forearm. Hold the stretch for at least 15 to 30 seconds. Repeat 2 to 4 times with each hand.")
+                Text("Extend the arm with the affected wrist in front of you and point your fingers up. With your other hand, gently bend your wrist farther until you feel a mild to moderate stretch in your forearm. Hold the stretch for 30 seconds. Repeat 2 to 4 times with each hand.")
                     .font(.body)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
@@ -144,7 +148,33 @@ struct Arms: View {
                     .padding(.all)
                     .frame(width: 300.0, height: 300.0)
                 
-                Text("Extend your arm straight out in front of you, parallel to the ground. Bring your extended arm across your body, keeping it straight. Use your other hand to gently grasp your forearm and pull your arm further across your body. Hold the stretch for 20-30 seconds, then repeat on the other side.")
+                Text("Extend your arm straight out in front of you, parallel to the ground. Bring your extended arm across your body, keeping it straight. Use your other hand to gently grasp your forearm and pull your arm further across your body. Hold the stretch for 30 seconds, then repeat on the other side.")
+                    .font(.body)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                
+                Text("test color")
+                    .foregroundColor(Color(red: 0.673, green: 0.703, blue: 0.58))
+                
+                ZStack{
+                    Text("Arm Circles Stretch")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))
+                } //end of ZStack
+                
+                .padding()
+                .background(Rectangle() .foregroundColor(Color(red: 0.8705882352941177, green: 0.8235294117647058, blue: 0.6666666666666666)))
+                .cornerRadius(10)
+                .shadow(radius: 15)
+                
+                Image("Circles")
+                    .resizable()
+                    .padding(.all)
+                    .frame(width: 300.0, height: 300.0)
+                
+                Text("Stand up straight, with your feet shoulder-width apart and your hands out and parallel to the floor. Make small circles using your whole arm, being sure to keep your back straight. Start making larger circles with your arm, keeping your movement controlled for 30 seconds.")
                     .font(.body)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.43137254901960786, green: 0.3568627450980392, blue: 0.29411764705882354))

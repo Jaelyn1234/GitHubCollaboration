@@ -31,7 +31,7 @@ struct ContentView: View {
                     Text("Welcome to Unknot, a daily stretching app that offers physical and mental benefits, increases flexibility, and reduces the risk of injury.")
                         .font(.headline)
                         .foregroundColor(Color(red: 0.4666666666666667, green: 0.43137254901960786, blue: 0.2784313725490196))
-                    
+                    Spacer()
                     ZStack{
                 NavigationLink(destination: Arms()) {
                     VStack{
