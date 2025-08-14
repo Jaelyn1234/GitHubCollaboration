@@ -31,6 +31,34 @@ struct Core: View {
                     ZStack{
                         HStack{
                             VStack{
+                                Text("Scapular squeezes (for shoulders and trapezius):")
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.leading)
+                                
+                                Text("Sit or stand up straight with your arms relaxed at your sides. Squeeze your shoulder blades together as if you're trying to hold a pencil between them. Hold for 5 seconds, then relax and repeat.")
+                                    .font(.footnote)
+                                    .multilineTextAlignment(.leading)
+                                    .lineLimit(nil)
+                                    .padding(.leading, 5.0)
+                            }//end of VStack in HStack
+                            Image("trapezius")
+                                .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150, height: 150)
+                                .cornerRadius(15)
+                            
+                        }//end of HStack
+                        .padding()
+                        .background(Rectangle().foregroundColor(Color(hue: 0.197, saturation: 0.566, brightness: 0.68)))
+                        .cornerRadius(15)
+                        .shadow(radius: 15)
+                        .padding()
+                    }//end of ZStack
+                    
+                    ZStack{
+                        HStack{
+                            VStack{
                                 Text("Hip bridge (for back and spine):")
                                     .font(.title3)
                                     .fontWeight(.bold)
